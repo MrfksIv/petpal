@@ -1,5 +1,11 @@
+@import 'themes/theme-1.css';
+
 .App {
-  text-align: center;
+  margin-top: 20%;
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-logo {
