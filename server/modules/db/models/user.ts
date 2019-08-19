@@ -1,14 +1,19 @@
 import { Document, Schema, Model, model} from 'mongoose';
 
+const ObjectId = Schema.Types.ObjectId;
 export interface UserDocument extends Document {
+
     username: string;
     fname: string;
     lname: string;
     createdDate: Date;
     password: string;
+    pets: [typeof ObjectId]
 }
 
-export interface UserModel extends UserDocument {}
+export interface UserModel extends UserDocument {
+    id?: typeof ObjectId
+}
 
 export const UserSchema: Schema = new Schema(
     {
@@ -16,7 +21,8 @@ export const UserSchema: Schema = new Schema(
         fname: String,
         lname: String,
         createdDate: Date,
-        password: String
+        password: String,
+        pets: [ObjectId]
     },
     { collection: 'users'}
 );
@@ -26,6 +32,6 @@ UserSchema.pre<UserDocument>('save', async function () {
 });
 
 export const User: Model<UserModel> = model<UserModel>(
-    'User',
+    'users',
     UserSchema
 );

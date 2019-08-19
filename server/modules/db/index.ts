@@ -3,6 +3,9 @@ import * as Mongoose from 'mongoose';
 import * as fp from 'fastify-plugin';
 import { UserModel, User } from './models/user';
 import { FastifyInstance } from 'fastify';
+const dotenv = require('dotenv');
+
+dotenv.config();
 
 export interface Models {
     User: Model<UserModel>;
@@ -15,17 +18,20 @@ export interface Db {
 export default fp( async (fastify: FastifyInstance, opts: {uri: string}, next): Promise<void> => {
     Mongoose.connection.on('connected', () => {
         fastify.log.info({actor: 'MongoDB'}, 'connected');
+        console.log('connected to mongoDB...')
     });
 
     Mongoose.connection.on('disconnected', () => {
         fastify.log.info({actor: 'MongoDB'}, 'disconnected');
+        console.log('disconnected from mongoDB...')
     });
 
     await Mongoose.connect(
-        opts.uri,
+        process.env.MONGODB_URI as string,
         {
             useNewUrlParser: true,
-            keepAlive: true
+            keepAlive: true,
+            useFindAndModify: false
         }
     );
 

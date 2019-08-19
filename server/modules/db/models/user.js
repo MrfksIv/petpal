@@ -9,17 +9,19 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = require("mongoose");
+const ObjectId = mongoose_1.Schema.Types.ObjectId;
 exports.UserSchema = new mongoose_1.Schema({
     username: String,
     fname: String,
     lname: String,
     createdDate: Date,
-    password: String
+    password: String,
+    pets: [ObjectId]
 }, { collection: 'users' });
 exports.UserSchema.pre('save', function () {
     return __awaiter(this, void 0, void 0, function* () {
         this.createdDate = new Date();
     });
 });
-exports.User = mongoose_1.model('User', exports.UserSchema);
+exports.User = mongoose_1.model('users', exports.UserSchema);
 //# sourceMappingURL=user.js.map
