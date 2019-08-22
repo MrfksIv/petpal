@@ -1,0 +1,13 @@
+{
+  "signin.header": "Log In",
+  "signin.button": "Log In",
+  "register.header": "Register",
+  "register.link": "Register Now!",
+  "password.label": "Password",
+  "forgotPassword.link": "Forgot password",
+  "password.required": "Input your password!",
+  "noAccount": "Don't have an account? ",
+  "fbSignin": "Login with Facebook",
+  "googleSignin": "Login with Google",
+  "usernameOrEmail.wrongField": "Input your username or email!"
+}

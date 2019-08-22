@@ -1,0 +1,13 @@
+{
+  "signin.header": "Σύνδεση",
+  "signin.button": "Σύνδεση",
+  "register.header": "Εγγραφή",
+  "register.link": "Δημιούργησε εδώ",
+  "password.label": "Κωδικός",
+  "forgotPassword.link": "Ξέχασα τον κωδικό μου",
+  "password.required": "Eισάγετε τον κωδικό πρόσβασης",
+  "noAccount": "Δεν έχεις λογαριασμό; ",
+  "fbSignin": "Σύνδεση με Facebook",
+  "googleSignin": "Σύνδεση με Google",
+  "usernameOrEmail.wrongField": "Eισάγετε το username ή email!"
+}
