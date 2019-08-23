@@ -3,9 +3,6 @@ import * as Mongoose from 'mongoose';
 import * as fp from 'fastify-plugin';
 import { UserModel, User } from './models/user';
 import { FastifyInstance } from 'fastify';
-const dotenv = require('dotenv');
-
-dotenv.config();
 
 export interface Models {
     User: Model<UserModel>;

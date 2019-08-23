@@ -2,9 +2,9 @@ import React, {Component, FormEvent} from 'react';
 import { Form, Icon, Input, Button, Checkbox } from 'antd';
 import { Route, Link } from 'react-router-dom';
 import {FormComponentProps} from 'antd/lib/form';
-import {RegisterForm} from '../register/Register';
 import {Title} from "../../Title";
 import {AuthStyles} from "../general-styles";
+import GoogleLogin from 'react-google-login';
 
 interface LoginProps extends FormComponentProps {
     usernameEmail: string;
@@ -28,6 +28,10 @@ class Login extends Component<LoginProps, LoginState> {
                 console.log('LOGIN CREDS:', values);
             }
         });
+    }
+
+    public responseGoogle = (response: any) => {
+        console.log(response);
     }
 
     render() {
@@ -69,9 +73,20 @@ class Login extends Component<LoginProps, LoginState> {
                                 Log in
                             </Button>
                             Don't have an account? <Link to='/register'>Register now!</Link>
+
                         </Form.Item>
                     </Form>
                 </div>
+                <div style={AuthStyles.formContainer}>
+                    <GoogleLogin
+                        clientId="162096347598-eov26og5dif8for0an3sc114o9cl5321.apps.googleusercontent.com"
+                        buttonText="Or Login with Google"
+                        onSuccess={this.responseGoogle}
+                        onFailure={this.responseGoogle}
+                        cookiePolicy={'single_host_origin'}
+                    />
+                </div>
+
             </div>
 
         );
