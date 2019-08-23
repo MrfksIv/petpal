@@ -38,7 +38,7 @@ server.register(cookie);
 server.register(session, opts);
 
 server.register(fastifyStatic, {
-    root: path.join(__dirname,'..', 'build')
+    root: path.join(__dirname,'..', 'build'),
 });
 
 // https://accounts.google.com/o/oauth2/v2/auth?client_id=162096347598-eov26og5dif8for0an3sc114o9cl5321.apps.googleusercontent.com&response_type=code&scope=https://www.googleapis.com/auth/gmail.send&redirect_uri=http://localhost:3001/auth/google/callback&access_type=offline
@@ -61,6 +61,10 @@ server.route({
         console.log('REACHED CB HANDLER:', req);
         res.send({success: true});
     }
+});
+
+server.setNotFoundHandler((req, res) => {
+    res.redirect('/');
 });
 
 const start = async () => {
