@@ -1,6 +1,6 @@
 import { FastifyInstance }  from 'fastify';
 import { Server, IncomingMessage, ServerResponse } from 'http';
-import { RedisHelper } from './modules/helpers/RedisHelper';
+// import { RedisHelper } from './modules/helpers/RedisHelper';
 import { createReadStream } from 'fs';
 
 import * as fastify from 'fastify';
@@ -15,7 +15,7 @@ const dotenv = require('dotenv');
 
 
 import userRoutes from './modules/routes/users';
-import db from './modules/db';
+// import db from './modules/db';
 import schema from './gql-schema';
 import {MainAppHelper} from './modules/helpers/MainAppHelper';
 
@@ -23,11 +23,11 @@ import {MainAppHelper} from './modules/helpers/MainAppHelper';
 dotenv.config();
 const server: FastifyInstance<Server, IncomingMessage, ServerResponse> = fastify();
 
-RedisHelper.createRedisClient();
+// RedisHelper.createRedisClient();
 
 server.register(fastifyBlipp);
 server.register(userRoutes, {prefix: '/api'});
-server.register(db);
+// server.register(db);
 server.register(gql, {
     schema,
     graphiql: true
@@ -52,9 +52,13 @@ server.route({
     }
 });
 
-
-
-
+server.route( {
+    method: 'GET',
+    url: '/elb-health-check',
+    handler:  (req, res) => {
+        res.status(200).send({success: true});
+    }
+});
 
 server.route({
     method: ['GET', 'POST'],
