@@ -335,8 +335,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Docker.petpal" />
       <item itemvalue="Node.js.start server" />
+      <item itemvalue="Docker.petpal" />
       <item itemvalue="npm.build react" />
     </list>
   </component>
