@@ -52,6 +52,10 @@ server.route({
     }
 });
 
+
+
+
+
 server.route({
     method: ['GET', 'POST'],
     url: '/auth/google/callback',
