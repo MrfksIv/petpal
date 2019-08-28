@@ -4,8 +4,8 @@ import { Server, IncomingMessage, ServerResponse } from 'http';
 import { createReadStream } from 'fs';
 
 import * as fastify from 'fastify';
-import * as session from 'fastify-session';
-import * as cookie from 'fastify-cookie';
+// import * as session from 'fastify-session';
+// import * as cookie from 'fastify-cookie';
 import * as path from 'path';
 
 const fastifyBlipp = require('fastify-blipp');
@@ -17,7 +17,7 @@ const dotenv = require('dotenv');
 import userRoutes from './modules/routes/users';
 // import db from './modules/db';
 import schema from './gql-schema';
-import {MainAppHelper} from './modules/helpers/MainAppHelper';
+// import {MainAppHelper} from './modules/helpers/MainAppHelper';
 
 
 dotenv.config();
@@ -33,9 +33,9 @@ server.register(gql, {
     graphiql: true
 });
 
-const opts = MainAppHelper.getSessionOptions();
-server.register(cookie);
-server.register(session, opts);
+// const opts = MainAppHelper.getSessionOptions();
+// server.register(cookie);
+// server.register(session, opts);
 
 server.register(fastifyStatic, {
     root: path.join(__dirname,'..', 'build'),
