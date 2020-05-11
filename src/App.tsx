@@ -8,7 +8,7 @@ import {LanguageSelector} from './components/LanguageSelector';
 
 class App extends Component {
   render() {
-    // fake commit
+
     return (
       <div className="App">
         <Suspense fallback={null}>
