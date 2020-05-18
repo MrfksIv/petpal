@@ -26,6 +26,28 @@
     -->
     <title>React App</title>
   </head>
+  <script>
+    (() => {
+
+      const keepParams = document.URL.substring(document.URL.indexOf('#')+1, document.URL.length);
+      const arrParams =arr = keepParams.split('&');
+
+      if (arrParams.length === 1) {
+        window.location.assign('https://auth.petpal.com.cy/login?client_id=7kqlmau2vkv5c02ba8p8v6ma5j&response_type=token&scope=email+openid+phone&redirect_uri=https://petpal.com.cy');
+      }
+
+      const objArr = arr.map(param => {
+        [key, val] = param.split('=');
+        return  {[key]: val};
+      });
+
+      const paramsObj = Object.assign({}, ...objArr);
+      Object.entries(paramsObj).forEach(keyVal => {
+        const [key, val] = keyVal;
+        localStorage.setItem(key, val);
+      });
+    })();
+  </script>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
