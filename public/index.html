@@ -13,24 +13,41 @@
 
     <script>
       (() => {
+        const AUTH_URL = 'https://auth.petpal.com.cy/login?client_id=726kedtt89n96624tmqtfhiqo2&response_type=token&scope=email+openid+phone&redirect_uri=https://dev.petpal.com.cy';
 
-        const keepParams = document.URL.substring(document.URL.indexOf('#')+1, document.URL.length);
-        const arrParams =arr = keepParams.split('&');
-
-        if (arrParams.length === 1) {
-          window.location.assign('https://auth.petpal.com.cy/login?client_id=726kedtt89n96624tmqtfhiqo2&response_type=code&scope=email+openid+phone&redirect_uri=https://dev.petpal.com.cy');
+        function navigateToAuthPage() {
+          window.location.assign(AUTH_URL);
         }
 
-        const objArr = arr.map(param => {
-          [key, val] = param.split('=');
-          return  {[key]: val};
-        });
+        function saveToLocalStorage(arrParams) {
+          const objArr = arrParams.map(param => {
+            [key, val] = param.split('=');
+            return  {[key]: val};
+          });
 
-        const paramsObj = Object.assign({}, ...objArr);
-        Object.entries(paramsObj).forEach(keyVal => {
-          const [key, val] = keyVal;
-          localStorage.setItem(key, val);
-        });
+          console.log('####')
+          const paramsObj = Object.assign({}, ...objArr);
+          Object.entries(paramsObj).forEach(keyVal => {
+            const [key, val] = keyVal;
+            localStorage.setItem(key, val);
+          });
+        }
+        //
+        const keepParams = document.URL.substring(document.URL.indexOf('#')+1, document.URL.length);
+        const arrParams  = keepParams.split('&');
+
+        console.log('ARRPARAMS:', arrParams);
+        // if no token exists in localStorage AND no token exists in the url
+        // it means that the user navigated to the website directly while being unauthenticated from cognito
+        if (!localStorage.getItem('access_token') &&  arrParams.length === 1) {
+          return navigateToAuthPage();
+        }
+
+        // reached the site from the authentication page and url contains token parameters. Save them.
+        if (arrParams.length > 1) {
+          saveToLocalStorage(arrParams);
+        }
+
       })();
     </script>
     <!--

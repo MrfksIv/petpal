@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a046e9a-e0c3-4bc5-ba29-645ce5c61052" name="Default Changelist" comment="">
+    <list default="true" id="6a046e9a-e0c3-4bc5-ba29-645ce5c61052" name="Default Changelist" comment="prevents redirection if token exists!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
@@ -40,6 +40,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -113,6 +114,14 @@
       <workItem from="1565858421389" duration="16918000" />
       <workItem from="1589194839450" duration="898000" />
     </task>
+    <task id="LOCAL-00001" summary="added logic for saving jwt token to localstorage">
+      <created>1596880488507</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596880488507</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,7 +155,15 @@
       </list>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added logic for saving jwt token to localstorage" />
+    <option name="LAST_COMMIT_MESSAGE" value="added logic for saving jwt token to localstorage" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="3098" y="318" key="CommitChangelistDialog2" timestamp="1596883798789">
+      <screen x="1792" y="0" width="2560" height="1440" />
+    </state>
+    <state x="3098" y="318" key="CommitChangelistDialog2/1792.0.2560.1440/0.0.1792.1120@1792.0.2560.1440" timestamp="1596883798789" />
     <state width="1750" height="280" key="GridCell.Tab.0.bottom" timestamp="1589194900454">
       <screen x="1792" y="23" width="2560" height="1417" />
     </state>
@@ -163,5 +180,9 @@
       <screen x="1792" y="23" width="2560" height="1417" />
     </state>
     <state width="1750" height="280" key="GridCell.Tab.0.right/1792.23.2560.1417/0.23.1792.1028@1792.23.2560.1417" timestamp="1589194900454" />
+    <state x="2672" y="460" key="Vcs.Push.Dialog.v2" timestamp="1596880493100">
+      <screen x="1792" y="0" width="2560" height="1440" />
+    </state>
+    <state x="2672" y="460" key="Vcs.Push.Dialog.v2/1792.0.2560.1440/0.0.1792.1120@1792.0.2560.1440" timestamp="1596880493100" />
   </component>
 </project>
