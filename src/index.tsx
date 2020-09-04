@@ -4,7 +4,6 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import config from './aws-exports';
 import { Amplify } from 'aws-amplify';
 import { ApolloProvider } from '@apollo/react-hooks';
 import { getUserAccount } from './graphql/queries';
@@ -15,15 +14,13 @@ import { createHttpLink } from 'apollo-link-http';
 import { ApolloClient} from 'apollo-client';
 import { InMemoryCache } from 'apollo-cache-inmemory';
 import gql from 'graphql-tag';
-import * as dotenv from 'dotenv';
 
-dotenv.config();
 console.log('REACT_APP_APPSYNC_ENDPOINT', process.env.REACT_APP_APPSYNC_ENDPOINT)
 console.log('NODE_ENV', process.env.NODE_ENV)
 const url = process.env.REACT_APP_APPSYNC_ENDPOINT!;
 const region = 'eu-west-1';
 const auth: AuthOptions = {
-    type: config.aws_appsync_authenticationType as 'AMAZON_COGNITO_USER_POOLS',
+    type: 'AMAZON_COGNITO_USER_POOLS',
     jwtToken: () => localStorage.getItem('id_token') as string ,
 
 };
