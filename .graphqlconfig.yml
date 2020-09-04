@@ -1,0 +1,15 @@
+projects:
+  PetpalGqlApi-dev:
+    schemaPath: src/graphql/schema.json
+    includes:
+      - src/graphql/**/*.ts
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: typescript
+        generatedFileName: src/API.ts
+        docsFilePath: src/graphql
+        region: eu-west-1
+        apiId: lsazfk3lnnfb3j5ns2igirckum
+        maxDepth: 5

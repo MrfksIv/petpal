@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6a046e9a-e0c3-4bc5-ba29-645ce5c61052" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,13 +13,19 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="TypeScript File" />
+        <option value="JavaScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1bl7U0WFsySH2ojpp6vEbppL0wP" />
@@ -30,6 +36,8 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+    <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -48,9 +56,11 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/components/authentication/google-login" />
       <recent name="$PROJECT_DIR$/server/gql-schema" />
       <recent name="$PROJECT_DIR$/server" />
@@ -88,6 +98,7 @@
       <item itemvalue="npm.build react" />
     </list>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -101,64 +112,61 @@
       <workItem from="1565693087967" duration="21939000" />
       <workItem from="1565797903226" duration="4259000" />
       <workItem from="1565858421389" duration="16918000" />
-      <workItem from="1589194839450" duration="987000" />
-      <workItem from="1589208676703" duration="491000" />
-      <workItem from="1589209586349" duration="645000" />
-      <workItem from="1589781595850" duration="566000" />
+      <workItem from="1589194839450" duration="898000" />
+      <workItem from="1596898553912" duration="187000" />
+      <workItem from="1596898782243" duration="473000" />
+      <workItem from="1598804101633" duration="2016000" />
+      <workItem from="1598848732362" duration="19852000" />
     </task>
+    <task id="LOCAL-00001" summary="added logic for saving jwt token to localstorage">
+      <created>1596880488507</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596880488507</updated>
+    </task>
+    <task id="LOCAL-00002" summary="prevents redirection if token exists!">
+      <created>1596885678166</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596885678166</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/server/modules/db/models/user.js.map" />
-        <option value="$PROJECT_DIR$/server/modules/db/models/user.js" />
-        <option value="$PROJECT_DIR$/server/modules/controllers/index.js.map" />
-        <option value="$PROJECT_DIR$/server/modules/controllers/index.js" />
-        <option value="$PROJECT_DIR$/server/modules/controllers/UserController.js.map" />
-        <option value="$PROJECT_DIR$/server/modules/controllers/PetController.js.map" />
-        <option value="$PROJECT_DIR$/server/modules/controllers/UserController.js" />
-        <option value="$PROJECT_DIR$/server/modules/controllers/PetController.js" />
-        <option value="$PROJECT_DIR$/server/gql-schema/index.js" />
-        <option value="$PROJECT_DIR$/server/gql-schema/index.js.map" />
-        <option value="$PROJECT_DIR$/server/main.js.map" />
-        <option value="$PROJECT_DIR$/server/main.js" />
-        <option value="$PROJECT_DIR$/server/@types/augmentation.js" />
-        <option value="$PROJECT_DIR$/server/@types/augmentation.js.map" />
-        <option value="$PROJECT_DIR$/server/modules/db/index.js.map" />
-        <option value="$PROJECT_DIR$/server/modules/db/index.js" />
-        <option value="$PROJECT_DIR$/server/modules/routes/users.js" />
-        <option value="$PROJECT_DIR$/server/modules/routes/users.js.map" />
-        <option value="$PROJECT_DIR$/server/modules/helpers/MainAppHelper.js.map" />
-        <option value="$PROJECT_DIR$/server/modules/helpers/RedisHelper.js" />
-        <option value="$PROJECT_DIR$/server/modules/helpers/MainAppHelper.js" />
-        <option value="$PROJECT_DIR$/server/modules/helpers/RedisHelper.js.map" />
-        <option value="$PROJECT_DIR$/server/modules/db/models/pet.js.map" />
-        <option value="$PROJECT_DIR$/server/modules/db/models/pet.js" />
-      </list>
-    </option>
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added logic for saving jwt token to localstorage" />
+    <MESSAGE value="prevents redirection if token exists!" />
+    <option name="LAST_COMMIT_MESSAGE" value="prevents redirection if token exists!" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1750" height="280" key="GridCell.Tab.0.bottom" timestamp="1589196347297">
+    <state x="3098" y="318" key="CommitChangelistDialog2" timestamp="1596885678060">
+      <screen x="1792" y="0" width="2560" height="1440" />
+    </state>
+    <state x="3098" y="318" key="CommitChangelistDialog2/1792.0.2560.1440/0.0.1792.1120@1792.0.2560.1440" timestamp="1596885678060" />
+    <state width="1750" height="280" key="GridCell.Tab.0.bottom" timestamp="1599237007078">
       <screen x="1792" y="23" width="2560" height="1417" />
     </state>
-    <state width="1750" height="280" key="GridCell.Tab.0.bottom/1792.23.2560.1417/0.23.1792.1028@1792.23.2560.1417" timestamp="1589196347297" />
-    <state width="1750" height="280" key="GridCell.Tab.0.center" timestamp="1589196347296">
+    <state width="1750" height="280" key="GridCell.Tab.0.bottom/1792.23.2560.1417/0.23.1792.1028@1792.23.2560.1417" timestamp="1599237007078" />
+    <state width="1750" height="280" key="GridCell.Tab.0.center" timestamp="1599237007077">
       <screen x="1792" y="23" width="2560" height="1417" />
     </state>
-    <state width="1750" height="280" key="GridCell.Tab.0.center/1792.23.2560.1417/0.23.1792.1028@1792.23.2560.1417" timestamp="1589196347296" />
-    <state width="1750" height="280" key="GridCell.Tab.0.left" timestamp="1589196347296">
+    <state width="1750" height="280" key="GridCell.Tab.0.center/1792.23.2560.1417/0.23.1792.1028@1792.23.2560.1417" timestamp="1599237007077" />
+    <state width="1750" height="280" key="GridCell.Tab.0.left" timestamp="1599237007077">
       <screen x="1792" y="23" width="2560" height="1417" />
     </state>
-    <state width="1750" height="280" key="GridCell.Tab.0.left/1792.23.2560.1417/0.23.1792.1028@1792.23.2560.1417" timestamp="1589196347296" />
-    <state width="1750" height="280" key="GridCell.Tab.0.right" timestamp="1589196347296">
+    <state width="1750" height="280" key="GridCell.Tab.0.left/1792.23.2560.1417/0.23.1792.1028@1792.23.2560.1417" timestamp="1599237007077" />
+    <state width="1750" height="280" key="GridCell.Tab.0.right" timestamp="1599237007078">
       <screen x="1792" y="23" width="2560" height="1417" />
     </state>
-    <state width="1750" height="280" key="GridCell.Tab.0.right/1792.23.2560.1417/0.23.1792.1028@1792.23.2560.1417" timestamp="1589196347296" />
-    <state x="2773" y="364" width="598" height="735" key="find.popup" timestamp="1589781752751">
-      <screen x="1792" y="23" width="2560" height="1417" />
+    <state width="1750" height="280" key="GridCell.Tab.0.right/1792.23.2560.1417/0.23.1792.1028@1792.23.2560.1417" timestamp="1599237007078" />
+    <state x="2672" y="460" key="Vcs.Push.Dialog.v2" timestamp="1596885697786">
+      <screen x="1792" y="0" width="2560" height="1440" />
     </state>
-    <state x="2773" y="364" width="598" height="735" key="find.popup/1792.23.2560.1417/0.0.1792.1051@1792.23.2560.1417" timestamp="1589781752751" />
+    <state x="2672" y="460" key="Vcs.Push.Dialog.v2/1792.0.2560.1440/0.0.1792.1120@1792.0.2560.1440" timestamp="1596885697786" />
   </component>
 </project>
