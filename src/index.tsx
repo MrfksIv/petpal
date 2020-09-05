@@ -15,6 +15,42 @@ import { ApolloClient} from 'apollo-client';
 import { InMemoryCache } from 'apollo-cache-inmemory';
 import gql from 'graphql-tag';
 
+(() => {
+    const AUTH_URL = process.env.REACT_APP_AUTH_ENDPOINT!;
+    function navigateToAuthPage() {
+        window.location.assign(AUTH_URL);
+    }
+
+    function saveToLocalStorage(arrParams: string[]) {
+        const objArr = arrParams.map((param: string) => {
+            const [key, val] = param.split('=');
+            return  {[key]: val};
+        });
+
+        const paramsObj = Object.assign({}, ...objArr);
+        Object.entries(paramsObj).forEach(keyVal => {
+            const [key, val] = keyVal;
+            localStorage.setItem(key, val as string);
+        });
+    }
+
+    const keepParams = document.URL.substring(document.URL.indexOf('#')+1, document.URL.length);
+    const arrParams  = keepParams.split('&');
+
+    // if no token exists in localStorage AND no token exists in the url
+    // it means that the user navigated to the website directly while being unauthenticated from cognito
+    if (!localStorage.getItem('access_token') && arrParams.length === 1) {
+        return navigateToAuthPage();
+    }
+    // reached the site from the authentication page and url contains token parameters. Save them.
+    if (arrParams.length > 1) {
+        saveToLocalStorage(arrParams);
+    }
+})();
+
+
+
+
 const url = process.env.REACT_APP_APPSYNC_ENDPOINT!;
 const region = 'eu-west-1';
 const auth: AuthOptions = {
