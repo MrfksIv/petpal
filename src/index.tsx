@@ -15,8 +15,6 @@ import { ApolloClient} from 'apollo-client';
 import { InMemoryCache } from 'apollo-cache-inmemory';
 import gql from 'graphql-tag';
 
-console.log('REACT_APP_APPSYNC_ENDPOINT', process.env.REACT_APP_APPSYNC_ENDPOINT)
-console.log('NODE_ENV', process.env.NODE_ENV)
 const url = process.env.REACT_APP_APPSYNC_ENDPOINT!;
 const region = 'eu-west-1';
 const auth: AuthOptions = {
