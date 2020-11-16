@@ -1,8 +1,0 @@
-:local(.inputField) {
-    width: 100%;
-    max-width: 300px;
-}
-
-:local(.test) {
-    background-color: #722ed1;
-}

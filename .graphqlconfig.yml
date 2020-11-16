@@ -2,14 +2,17 @@ projects:
   PetpalGqlApi-dev:
     schemaPath: src/graphql/schema.json
     includes:
-      - src/graphql/**/*.ts
+      - src/graphql/**/*.js
     excludes:
       - ./amplify/**
     extensions:
       amplify:
-        codeGenTarget: typescript
-        generatedFileName: src/API.ts
+        codeGenTarget: javascript
+        generatedFileName: ''
         docsFilePath: src/graphql
         region: eu-west-1
         apiId: lsazfk3lnnfb3j5ns2igirckum
         maxDepth: 5
+extensions:
+  amplify:
+    version: 3

@@ -1,5 +1,10 @@
 {
   "signin.header": "Σύνδεση",
+  "newAccountName.placeholder": "Ονοματεπώνυμο",
+  "newAccountStep1.description": "Δημιουργία Λογαριασμού",
+  "newAccountAddress.placeholder": "Διέυθυνση",
+  "newAccountPostCode.placeholder": "Τ.Κ.",
+  "newAccountCity.placeholder": "Επαρχία",
   "signin.button": "Σύνδεση",
   "register.header": "Εγγραφή",
   "register.link": "Δημιούργησε εδώ",

@@ -1,15 +1,15 @@
 {
     "dev": {
         "awscloudformation": {
-            "AuthRoleName": "amplify-petpalclient-dev-165446-authRole",
-            "UnauthRoleArn": "arn:aws:iam::877628456214:role/amplify-petpalclient-dev-165446-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::877628456214:role/amplify-petpalclient-dev-165446-authRole",
+            "AuthRoleName": "amplify-petpalclient-dev-141350-authRole",
+            "UnauthRoleArn": "arn:aws:iam::877628456214:role/amplify-petpalclient-dev-141350-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::877628456214:role/amplify-petpalclient-dev-141350-authRole",
             "Region": "eu-central-1",
-            "DeploymentBucketName": "amplify-petpalclient-dev-165446-deployment",
-            "UnauthRoleName": "amplify-petpalclient-dev-165446-unauthRole",
-            "StackName": "amplify-petpalclient-dev-165446",
-            "StackId": "arn:aws:cloudformation:eu-central-1:877628456214:stack/amplify-petpalclient-dev-165446/89803ed0-eb91-11ea-ba31-0676ff393846",
-            "AmplifyAppId": "d3fxzame03htb1"
+            "DeploymentBucketName": "amplify-petpalclient-dev-141350-deployment",
+            "UnauthRoleName": "amplify-petpalclient-dev-141350-unauthRole",
+            "StackName": "amplify-petpalclient-dev-141350",
+            "StackId": "arn:aws:cloudformation:eu-central-1:877628456214:stack/amplify-petpalclient-dev-141350/0c01d860-f032-11ea-83ff-06cc4e94edaa",
+            "AmplifyAppId": "d1t7llcr1r2dx8"
         }
     }
 }

@@ -1,4 +1,4 @@
-import React, {Component, FunctionComponent} from "react";
+import React, {FunctionComponent} from "react";
 import { Select } from 'antd';
 import {useTranslation} from 'react-i18next';
 

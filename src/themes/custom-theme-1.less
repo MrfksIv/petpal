@@ -1,6 +1,7 @@
 @import '../../node_modules/antd/dist/antd.less';
 
 @primary-color: #FF5722;
+@processing-color: #FF5722;
 @link-color: #c0ca33;
 @success-color: #4CAF50;
 @warning-color: #FFEB3B;
@@ -10,6 +11,31 @@
 @text-color: #212121;
 @text-color-secondary : #757575;
 @disabled-color : #FFCCBC;
-@border-radius-base: 4px;
+@border-radius-base: 8px;
 @border-color-base: #E64A19;
 @box-shadow-base: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+
+.primary-color {
+  color: @border-color-base;
+}
+
+.vertical-divider-sm {
+  margin: 0.3em;
+}
+
+.themed-divider {
+  color: @border-color-base !important;
+  border-top-color: @border-color-base !important;
+}
+
+//@primary-color: @blue-6;
+//@info-color: @primary-color;
+//@success-color: @green-6;
+//@processing-color: @blue-6;
+//@error-color: @red-5;
+//@highlight-color: @red-5;
+//@warning-color: @gold-6;
+//@normal-color: #d9d9d9;
+//@white: #fff;
+//@black: #000;

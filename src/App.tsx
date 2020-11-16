@@ -1,33 +1,44 @@
-import React, { Component, Suspense } from 'react';
+import React, { Suspense } from 'react';
 import './App.css';
-import {LoginForm} from './components/authentication/login/Login';
-import {Redirect, Route, Switch} from 'react-router-dom';
-import {RegisterForm} from './components/authentication/register/Register';
+import './themes/theme-1.css';
+import './index.css';
 import './i18n'
 import {LanguageSelector} from './components/LanguageSelector';
-import { UserAccount } from './components/UserAccount';
+import LandingPage from './components/LandingPage/LandingPage';
+import {useQuery} from '@apollo/client';
+import gql from "graphql-tag";
+import {userAccount} from './graphql/queries';
+import {navigateToAuthPage} from './utils/client-utils';
 
-class App extends Component {
-  render() {
-      return (
-          // @ts-ignore
-          <div className="App">
+function App() {
+    const { loading, error, data} = useQuery(gql(userAccount));
+    console.log('loading:', loading);
+    if (error && error.message.indexOf('401') > 0) {
+        localStorage.clear();
+        navigateToAuthPage();
+        console.log('error:', error.message);
+    }
+
+    let content: any;
+    console.log('data:', data);
+    if (loading) {
+        console.log('IN LOADING!')
+        content = `<h1> Loading</h1>`;
+    }
+    if (!loading && !data.getUserAccount) {
+        content = <LandingPage />;
+    }
+    if (!loading && data.getUserAccount) {
+        content =  <h1> Hello {data.getUserAccount.email}</h1>;
+    }
+    return (
+        <div className="App" >
             <Suspense fallback={null}>
-                <UserAccount />
-                <Switch>
-                    <Route exact path='/' component={LoginForm}>
-                        <Redirect to='/login'/>
-                    </Route>
-                    <Route path='/login' component={LoginForm}/>
-                    <Route path='/register' component={RegisterForm}/>
-                    {/*<Route path='/forgot-password' component={RegisterForm}/>*/}
-                </Switch>
-                <LanguageSelector></LanguageSelector>
+                {content}
+                <LanguageSelector />
             </Suspense>
-          </div>
-
+        </div>
     );
-  }
 }
 
 export default App;
