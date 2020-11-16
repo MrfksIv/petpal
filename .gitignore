@@ -28,6 +28,10 @@ yarn-error.log*
 /src/**/*.js
 /src/**/*.js.map
 
+!src/graphql
+!src/graphql/**/*.js
+!src/graphql/**/*.js.map
+
 #amplify
 amplify/\#current-cloud-backend
 amplify/.config/local-*

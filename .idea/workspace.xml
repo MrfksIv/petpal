@@ -5,40 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a046e9a-e0c3-4bc5-ba29-645ce5c61052" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/assets/images/paw-print.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LandingPage/AddAccount/AddAccount.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LandingPage/AddAnimal/AddAnimal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LandingPage/AddPetPal/AddPetPal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LandingPage/AvatarUpload.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LandingPage/FormStepper.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LandingPage/LandingPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graphql/apollo/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/client-utils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/graphql/mutations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/graphql/queries.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.graphqlconfig.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gruntfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/Gruntfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/.config/project-config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/backend-config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/team-provider-info.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/i18n/translations/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/i18n/translations/en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/i18n/translations/gr.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/i18n/translations/gr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LanguageSelector.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LanguageSelector.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UserAccount.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserAccount.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/authentication/general-styles.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/authentication/login/Login.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/authentication/register/Register.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/authentication/register/register.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphql/queries.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphql/schema.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/themes/custom-theme-1.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/themes/custom-theme-1.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/themes/theme-1.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/themes/theme-1.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,6 +141,7 @@
       <workItem from="1604130893315" duration="149000" />
       <workItem from="1604485134852" duration="1576000" />
       <workItem from="1605344043563" duration="24501000" />
+      <workItem from="1605533379640" duration="1457000" />
     </task>
     <task id="LOCAL-00001" summary="added logic for saving jwt token to localstorage">
       <created>1596880488507</created>
@@ -203,12 +174,8 @@
     </state>
     <state x="360" y="227" width="1071" height="739" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1601533586060" />
     <state x="360" y="227" width="1071" height="691" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1028@0.23.1792.1028" timestamp="1599988298468" />
-    <state x="3098" y="318" key="CommitChangelistDialog2" timestamp="1596885678060">
-      <screen x="1792" y="0" width="2560" height="1440" />
-    </state>
-    <state x="3098" y="318" key="CommitChangelistDialog2/1792.0.2560.1440/0.0.1792.1120@1792.0.2560.1440" timestamp="1596885678060" />
-    <state width="953" height="254" key="GridCell.Tab.0.bottom" timestamp="1605487203192">
-      <screen x="0" y="23" width="3840" height="2068" />
+    <state width="875" height="346" key="GridCell.Tab.0.bottom" timestamp="1605542950076">
+      <screen x="1792" y="23" width="2560" height="1417" />
     </state>
     <state width="1750" height="317" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1601535955412" />
     <state width="1750" height="329" key="GridCell.Tab.0.bottom/0.23.1792.1028@0.23.1792.1028" timestamp="1602522100902" />
@@ -216,9 +183,9 @@
     <state width="953" height="254" key="GridCell.Tab.0.bottom/0.23.3840.2068@0.23.3840.2068" timestamp="1605487203192" />
     <state width="953" height="254" key="GridCell.Tab.0.bottom/1792.-297.2560.1417/0.23.1792.1028@1792.-297.2560.1417" timestamp="1605457315517" />
     <state width="1750" height="329" key="GridCell.Tab.0.bottom/1792.23.2560.1417/0.23.1792.1028@0.23.1792.1028" timestamp="1602321213454" />
-    <state width="2217" height="234" key="GridCell.Tab.0.bottom/1792.23.2560.1417/0.23.1792.1028@1792.23.2560.1417" timestamp="1603038634225" />
-    <state width="953" height="254" key="GridCell.Tab.0.center" timestamp="1605487203190">
-      <screen x="0" y="23" width="3840" height="2068" />
+    <state width="875" height="346" key="GridCell.Tab.0.bottom/1792.23.2560.1417/0.23.1792.1028@1792.23.2560.1417" timestamp="1605542950076" />
+    <state width="875" height="346" key="GridCell.Tab.0.center" timestamp="1605542950076">
+      <screen x="1792" y="23" width="2560" height="1417" />
     </state>
     <state width="1750" height="317" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1601535955411" />
     <state width="1750" height="329" key="GridCell.Tab.0.center/0.23.1792.1028@0.23.1792.1028" timestamp="1602522100900" />
@@ -226,9 +193,9 @@
     <state width="953" height="254" key="GridCell.Tab.0.center/0.23.3840.2068@0.23.3840.2068" timestamp="1605487203190" />
     <state width="953" height="254" key="GridCell.Tab.0.center/1792.-297.2560.1417/0.23.1792.1028@1792.-297.2560.1417" timestamp="1605457315516" />
     <state width="1750" height="329" key="GridCell.Tab.0.center/1792.23.2560.1417/0.23.1792.1028@0.23.1792.1028" timestamp="1602321213452" />
-    <state width="2217" height="234" key="GridCell.Tab.0.center/1792.23.2560.1417/0.23.1792.1028@1792.23.2560.1417" timestamp="1603038634224" />
-    <state width="953" height="254" key="GridCell.Tab.0.left" timestamp="1605487203189">
-      <screen x="0" y="23" width="3840" height="2068" />
+    <state width="875" height="346" key="GridCell.Tab.0.center/1792.23.2560.1417/0.23.1792.1028@1792.23.2560.1417" timestamp="1605542950076" />
+    <state width="875" height="346" key="GridCell.Tab.0.left" timestamp="1605542950075">
+      <screen x="1792" y="23" width="2560" height="1417" />
     </state>
     <state width="1750" height="317" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1601535955410" />
     <state width="1750" height="329" key="GridCell.Tab.0.left/0.23.1792.1028@0.23.1792.1028" timestamp="1602522100891" />
@@ -236,9 +203,9 @@
     <state width="953" height="254" key="GridCell.Tab.0.left/0.23.3840.2068@0.23.3840.2068" timestamp="1605487203189" />
     <state width="953" height="254" key="GridCell.Tab.0.left/1792.-297.2560.1417/0.23.1792.1028@1792.-297.2560.1417" timestamp="1605457315515" />
     <state width="1750" height="329" key="GridCell.Tab.0.left/1792.23.2560.1417/0.23.1792.1028@0.23.1792.1028" timestamp="1602321213451" />
-    <state width="2217" height="234" key="GridCell.Tab.0.left/1792.23.2560.1417/0.23.1792.1028@1792.23.2560.1417" timestamp="1603038634223" />
-    <state width="953" height="254" key="GridCell.Tab.0.right" timestamp="1605487203191">
-      <screen x="0" y="23" width="3840" height="2068" />
+    <state width="875" height="346" key="GridCell.Tab.0.left/1792.23.2560.1417/0.23.1792.1028@1792.23.2560.1417" timestamp="1605542950075" />
+    <state width="875" height="346" key="GridCell.Tab.0.right" timestamp="1605542950076">
+      <screen x="1792" y="23" width="2560" height="1417" />
     </state>
     <state width="1750" height="317" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1601535955411" />
     <state width="1750" height="329" key="GridCell.Tab.0.right/0.23.1792.1028@0.23.1792.1028" timestamp="1602522100901" />
@@ -246,11 +213,7 @@
     <state width="953" height="254" key="GridCell.Tab.0.right/0.23.3840.2068@0.23.3840.2068" timestamp="1605487203191" />
     <state width="953" height="254" key="GridCell.Tab.0.right/1792.-297.2560.1417/0.23.1792.1028@1792.-297.2560.1417" timestamp="1605457315517" />
     <state width="1750" height="329" key="GridCell.Tab.0.right/1792.23.2560.1417/0.23.1792.1028@0.23.1792.1028" timestamp="1602321213453" />
-    <state width="2217" height="234" key="GridCell.Tab.0.right/1792.23.2560.1417/0.23.1792.1028@1792.23.2560.1417" timestamp="1603038634225" />
-    <state x="2672" y="460" key="Vcs.Push.Dialog.v2" timestamp="1596885697786">
-      <screen x="1792" y="0" width="2560" height="1440" />
-    </state>
-    <state x="2672" y="460" key="Vcs.Push.Dialog.v2/1792.0.2560.1440/0.0.1792.1120@1792.0.2560.1440" timestamp="1596885697786" />
+    <state width="875" height="346" key="GridCell.Tab.0.right/1792.23.2560.1417/0.23.1792.1028@1792.23.2560.1417" timestamp="1605542950076" />
     <state x="70" y="94" width="1652" height="886" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1601830108937">
       <screen x="0" y="23" width="1792" height="1028" />
     </state>
