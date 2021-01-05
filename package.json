@@ -17,7 +17,7 @@
     "aws-appsync-auth-link": "^2.0.2",
     "aws-appsync-react": "^4.0.0",
     "aws-appsync-subscription-link": "^2.2.0",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "connect-redis": "^3.4.2",
     "dotenv": "^8.0.0",
     "fastify": "^2.7.1",
